@@ -17,4 +17,6 @@ app.listen(port, () => {
   console.log(`api running at port ${port}`)
 })
 
-app.get('/', (req, res) => {})
+app.get('/health', (req, res) => {
+  res.json({ ok: true })
+})
